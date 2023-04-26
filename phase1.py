@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
-def scrap_book():
+def scrap_book(url):
  main_page = "http://books.toscrape.com/"
  url = "http://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
  reponse = requests.get(url)
@@ -30,5 +30,14 @@ def scrap_book():
           category, review_rating, image_url]
   writer.writerow(ligne)
  return product_page_url, upc, title, price_including_tax,price_exluding_tax,number_available,product_description,category,review_rating,image_url
-print(scrap_book())
+url = "http://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+print(scrap_book(url))
+
+
+
+
+
+
+
+
 
