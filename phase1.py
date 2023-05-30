@@ -1,6 +1,4 @@
-from os import mkdir
 from os.path import join
-
 import requests
 from bs4 import BeautifulSoup
 from csv import writer
