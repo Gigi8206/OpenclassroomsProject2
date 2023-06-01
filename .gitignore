@@ -1,0 +1,5 @@
+.idea/
+*.csv
+Download images/
+save_csv_file.py
+scrap_all_book.py
